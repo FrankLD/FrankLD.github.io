@@ -125,9 +125,11 @@ section {
     background-position: top;
     
 }
+
 .bio img {
     width: 100%;
     height: auto;
+    margin: 5px 0;
 }
 
 #content > section {
@@ -139,16 +141,54 @@ section {
     margin: 20px 0;
 }
 
+.gallery .row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .gallery img {
-    padding-right: 5px;
-    padding-left: 5px;
-    margin: 5px 0;
+    width: 100%;
 }
 
 .img_undr {
     position: relative;
 }
 
+aside ul li{
+    line-height: 25px
+}
 
 
 
+
+
+aside b {
+    font-size: 12px;
+}
+
+aside {
+    color: grey
+}
+
+aside h2 {
+    font-size: 20px;
+    border-bottom: solid 3px grey;
+}
+
+.article_content {
+    margin: 20px 0px
+}
+
+aside hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+
+#content {
+    padding-bottom: 200px;
+}
+
+footer p {
+    text-align: center;
+}
