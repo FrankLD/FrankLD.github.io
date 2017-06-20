@@ -52,10 +52,10 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300
-
+    font-weight: 300;
+    line-height: 25px
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -68,7 +68,7 @@ h1 {
 section h3 {
     font-size: 50px;
     font-weight: 900;
-    color: #F15A24;
+    color: b;
 }
 
 b {
@@ -161,9 +161,9 @@ aside ul li{
 
 
 
-
+aside li {font-size: 12px;}
 aside b {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 aside {
@@ -191,4 +191,30 @@ aside hr {
 
 footer p {
     text-align: center;
+}
+
+.modal-content {
+    background-color: lightgrey;
+}
+
+.modal-header {
+    background-color: darkgray;
+    color: #D9D9D9
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.btn-default {
+    background-color: #F15A24;
+    color: #D9D9D9;
+}
+
+.modal-header {
+        border-bottom: none;
+}
+
+.modal-footer {
+        border-top: 1px solid rgba(50,50,50,0.1);
 }
