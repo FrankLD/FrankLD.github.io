@@ -78,9 +78,11 @@ b {
 #main_header {
     background-image: url(img/header.png);
     background-position: center;
-    height: 500px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
+    text-align: center;
+    padding-top: 10vh;
     
 }
 
@@ -217,4 +219,17 @@ footer p {
 
 .modal-footer {
         border-top: 1px solid rgba(50,50,50,0.1);
+}
+.hello {
+    width: 450px;
+    color: white;
+    font-size: 14px;
+    font-family: "Open Sans";
+    margin: 20px auto;
+}
+
+
+
+#main_header h2 {
+    font-size: 50px
 }
