@@ -287,17 +287,3 @@ footer p {
 
 }
 
-@media screen and (orientation: landscape) {
-    #main_header {
-        height:100vh;
-	}
-    
-    #content_top {
-        background-size: 130%;
-        height: 300px;
-        bottom: -220px;
-	}
-    .orange_guy {
-            width: 410px;
-    }
-}
