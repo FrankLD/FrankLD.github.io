@@ -167,9 +167,15 @@ aside ul li{
 
 
 
-aside li {font-size: 12px;}
+aside li {
+    margin: 20px 0;
+}
 aside b {
     font-size: 10px;
+}
+
+aside p {
+    font-size: 12px;
 }
 
 aside {
@@ -277,9 +283,7 @@ footer p {
         line-height: 1.5em;
     }
     
-    aside li {
-        margin: 20px 0;
-    }
+
 }
 
 @media screen and (orientation: landscape) {
