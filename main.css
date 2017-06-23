@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     background-color: lightgrey;
+    background-image: url("img/tex/4-bg.png");
 }
 ol, ul {
 	list-style: none;
@@ -81,6 +82,7 @@ b {
     overflow: hidden;
     position: relative;
     text-align: center;
+
 }
 
 #main_header h1 {
@@ -114,7 +116,6 @@ section {
 }
 .container {
     z-index: 3;
-    background-color: lightgrey;
 }
 
 #content_top {
@@ -195,6 +196,7 @@ aside hr {
 
 footer p {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .modal-content {
