@@ -16,15 +16,17 @@
 
 <body>
     <header id="main_header">
-        <h1>FRANCIS</h1><h2>LAGUNA-DRISCOLL</h2>
-        <div class="hello"><p>Hi! I'm Francis, I'm a Graphic Designer currently living in New York. I'm new to the city and a bit shy but if you just scroll down you can learn a little more about me.</p></div>
-        <nav>
-            <ul>
-                <li>Menu</li>
-                <li>Menu</li>
-                <li>Menu</li>
-            </ul>
-        </nav>
+        <div class="header_content">
+            <h1>FRANCIS</h1><h2>LAGUNA-DRISCOLL</h2>
+            <div class="hello"><p>Hi! I'm Francis, I'm a Graphic Designer currently living in New York. I'm new to the city and a bit shy but if you just scroll down you can learn a little more about me.</p></div>
+            <nav>
+                <ul>
+                    <li>About</li>
+                    <li>Work</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>    
         <img class="orange_guy" src="img/orange_guy_s.png">
         <div id="content_top"></div>
     </header>
@@ -39,7 +41,7 @@
                     <h3 class="col-md-push-1 col-md-11">A Tale of Two Cities</h3>
                 </div>
             </header>
-                <aside class="col-md-2 text-right"><h2>Bio</h2></aside>
+                <aside class="col-md-3 text-right"><h2>Bio</h2></aside>
                 <article class="col-md-6">
                     <div class="article_content">
                         <p>Born in Boston, raised in Massachusetts, I’m here in New York City after graduating from a prominent college in Bolivia, South America.  After spending the past 9 years abroad, I have finally made my way back home with new ideas, dreams and a hard-working attitude. I am eager to further my knowledge and establish a career in Graphic and Web Design, all while also pursuing acting, improv and music.</p>
@@ -77,7 +79,7 @@
                     <h3 class="col-md-push-1 col-md-11">A Little Taste</h3>
                 </div>
             </header>
-                <aside class="col-md-2 text-right"><h2>Work</h2></aside>
+                <aside class="col-md-3 text-right"><h2>Work</h2></aside>
                 <article class="col-md-6">
                     <div class="article_content"><p>Portland green juice tbh unicorn bespoke ethical occupy heirloom single-origin coffee microdosing. Leggings lomo prism tbh kale chips copper mug XOXO. Four dollar toast typewriter tattooed intelligentsia actually humblebrag plaid heirloom activated charcoal jean shorts vexillologist food truck. Authentic chia man bun, vice listicle vape poke pok pok biodiesel health goth vaporware cray fingerstache cronut. Cornhole forage lo-fi mustache snackwave. Readymade fixie subway tile hammock semiotics adaptogen hoodie you probably haven't heard of them cray sustainable.</p></div>
                     <section class="gallery row">
@@ -150,10 +152,14 @@
 <script type="text/javascript" src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
 <script type="text/javascript" src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
 <script type="text/javascript" src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="js/parallax.min.js"></script>
+
 
 
     <script type="text/javascript">
                 // init controller
+
+        
         var controller = new ScrollMagic.Controller();
         
         // create a scene
