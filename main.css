@@ -271,6 +271,15 @@ footer p {
 	#main_header {
 		height:50vh;
 	}
+    
+    aside h4, aside b, aside p {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    
+    aside li {
+        margin: 20px 0;
+    }
 }
 
 @media screen and (orientation: landscape) {
