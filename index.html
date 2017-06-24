@@ -16,7 +16,7 @@
 
 <body>
     <header id="main_header">
-        <div id="cloud-container" data-limit-y="20">
+        <div id="cloud-container" data-limit-y="false">
             <div class="layer" data-depth="0"></div>
             <div class="layer cloud1" data-depth="0.80"><img src="img/cloud1.png"></div>
             <div class="layer cloud2" data-depth="0.40"><img src="img/cloud2.png"></div>
@@ -32,8 +32,13 @@
                 </ul>
             </nav>
         </div>    
-        <img class="orange_guy" src="img/orange_guy_s.png">
         <div id="content_top"></div>
+        <img class="orange_guy" src="img/orange_guy_s.png">
+        <div id="bg-container" data-limit-y="true">
+            <div class="layer" data-depth="0"></div>
+            <div class="layer" data-depth="0.2"><img src="img/header_big.png"></div>
+        </div>
+        
     </header>
     
     
@@ -141,7 +146,7 @@
             </header>
                 <aside class="col-md-3 text-right"><h2>Contact</h2></aside>
                 <article class="col-md-6">
-                    <div class="article_content"><p>Portland green juice tbh unicorn bespoke ethical occupy heirloom single-origin coffee microdosing. Leggings lomo prism tbh kale chips copper mug XOXO. Four dollar toast typewriter tattooed intelligentsia actually humblebrag plaid heirloom activated charcoal jean shorts vexillologist food truck. Authentic chia man bun, vice listicle vape poke pok pok biodiesel health goth vaporware cray fingerstache cronut. Cornhole forage lo-fi mustache snackwave. Readymade fixie subway tile hammock semiotics adaptogen hoodie you probably haven't heard of them cray sustainable.</p></div>                
+                    <div class="article_content"><p>Currently I’m looking for work and accepting freelance projects. Please feel free to send me an email at <a href="mailto:fldriscoll@gmail.com?subject=Project Proposal - Frank.LD">fldriscoll@gmail.com</a> so we can collaborate!</p></div>                
                 </article>
             
         </section>
@@ -165,6 +170,11 @@
                 // init controller
         var cloud = document.getElementById('cloud-container');
         var parallax = new Parallax(cloud);
+        var bg = document.getElementById('bg-container');
+        var parallax = new Parallax(bg, {
+            invertX: false,
+            invertY: true,
+        });
         
         var controller = new ScrollMagic.Controller();
         
