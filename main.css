@@ -290,16 +290,22 @@ footer p {
 
 .cloud1 {
     position: absolute;
-    top: 40%;
-    bottom: 0;
-    left: 20px
+}
+
+.cloud1 img {
+    position: relative;
+    left: 70vw;
+    top: 40vh;
+}
+
+.cloud2 img {
+    position: relative;
+    left: 5vw;
+    top: 50vh;
 }
 
 .cloud2 {
     position: absolute;
-    top: 45%;
-    bottom: 0;
-    right: 15px
 }
 
 
