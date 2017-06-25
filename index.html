@@ -18,8 +18,8 @@
     <header id="main_header">
         <div id="cloud-container" data-limit-y="false">
             <div class="layer" data-depth="0"></div>
-            <div class="layer cloud1" data-depth="0.80"><img src="img/cloud1.png"></div>
-            <div class="layer cloud2" data-depth="0.40"><img src="img/cloud2.png"></div>
+            <div class="layer cloud1" data-depth="0.50"><img src="img/cloud1.png"></div>
+            <div class="layer cloud2" data-depth="0.30"><img src="img/cloud2.png"></div>
         </div>
         <div class="header_content">
             <h1>Francis</h1><h2>LAGUNA-DRISCOLL</h2>
@@ -36,7 +36,7 @@
         <img class="orange_guy" src="img/orange_guy_s.png">
         <div id="bg-container" data-limit-y="true">
             <div class="layer" data-depth="0"></div>
-            <div class="layer" data-depth="0.2"><img src="img/header_big.png"></div>
+            <div class="layer" data-depth="0.1"><img src="img/header_big1.png"></div>
         </div>
         
     </header>
@@ -169,11 +169,15 @@
     <script type="text/javascript">
                 // init controller
         var cloud = document.getElementById('cloud-container');
-        var parallax = new Parallax(cloud);
+        var parallax = new Parallax(cloud, {
+            invertX: true,
+            limitY: 6
+        });
+        
         var bg = document.getElementById('bg-container');
         var parallax = new Parallax(bg, {
             invertX: false,
-            invertY: true,
+            limitY: 6
         });
         
         var controller = new ScrollMagic.Controller();
@@ -184,7 +188,7 @@
                 offset: 30        // start this scene after scrolling for 50px
             })
             .setPin($(".pin1"))
-            .setTween(TweenMax.from($("#content_top"), 1, { y: -100, ease: Power1.easeInOut}))
+            .setTween(TweenMax.from($("#content_top"), 1, { y: -100, ease: Power3.easeInOut}))
             .addTo(controller); // assign the scene to the controller
         
         
