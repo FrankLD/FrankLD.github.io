@@ -218,6 +218,9 @@ footer p {
 .modal-body img {
     width: 100%;
 }
+.modal-body .row {
+    margin:27px 0px;
+}
 
 .btn-default {
     background-color: #F15A24;
