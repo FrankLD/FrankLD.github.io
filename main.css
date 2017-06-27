@@ -76,6 +76,15 @@ b {
     font-weight: 900;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color:darkgray;
+    text-decoration: none;
+}
+
 #main_header {
     background-position: center;
     height: 100vh;
@@ -149,6 +158,10 @@ section {
 .gallery .row {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.gallery .row div {
+    cursor: pointer;
 }
 
 .gallery img {
@@ -287,6 +300,43 @@ footer p {
 
 .cloud2 {
     position: absolute;
+}
+
+#altmenu {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: 45px;
+    background-color: #333333;
+    z-index: 5;
+    color: white;
+}
+
+
+#altmenu li, #altmenu a  {
+        color: grey;
+        float: left;
+}
+
+#altmenu a:hover  {
+        color: white;
+}
+
+#altmenu h1 {
+    color: white;
+    font-weight: 900;
+    font-family: "Rajdhani";
+
+}
+
+#altmenu h1 a {
+    font-size: 28px;
+
+    color: white;
+    font-weight: 900;
+    font-family: "Rajdhani";
+    
+
 }
 
 
