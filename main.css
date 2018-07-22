@@ -381,8 +381,9 @@ footer p {
 		font-size:2em;
 		line-height:1.5em;
 	}
-    #altmenu h1 a{
-        line-height:25px;
+    #altmenu a {
+	    font-size:1em;
+	    line-height:25px;
     }
 	#main_header {
 		height:50vh;
